@@ -13,14 +13,19 @@
         android:theme="@style/Theme.DataPersistence"
         tools:targetApi="31">
         <activity
-            android:name=".database.DatabaseActivity"
+            android:name=".ui.sp.SPActivity"
+            android:exported="false"
+            android:label="@string/title_activity_spactivity"
+            android:theme="@style/Theme.DataPersistence" />
+        <activity
+            android:name=".ui.database.DatabaseActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".files.FileActivity"
+            android:name=".ui.files.FileActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

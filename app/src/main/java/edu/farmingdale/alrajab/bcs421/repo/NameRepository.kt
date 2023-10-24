@@ -1,6 +1,8 @@
-package edu.farmingdale.alrajab.bcs421.database
+package edu.farmingdale.alrajab.bcs421.repo
 import android.content.Context
 import androidx.room.Room
+import edu.farmingdale.alrajab.bcs421.db.User
+import edu.farmingdale.alrajab.bcs421.db.AppDatabase
 
 
 class NameRepository private constructor(context: Context) {

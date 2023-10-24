@@ -1,7 +1,8 @@
-package edu.farmingdale.alrajab.bcs421.database
+package edu.farmingdale.alrajab.bcs421.db
 
 import androidx.room.*
 import androidx.room.OnConflictStrategy.*
+import androidx.room.OnConflictStrategy.Companion.REPLACE
 
 @Dao
 interface UserDao {

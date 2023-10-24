@@ -1,4 +1,4 @@
-package edu.farmingdale.alrajab.bcs421.files
+package edu.farmingdale.alrajab.bcs421.ui.files
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

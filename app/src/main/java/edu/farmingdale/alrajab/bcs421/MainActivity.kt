@@ -3,9 +3,9 @@ package edu.farmingdale.alrajab.bcs421
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import edu.farmingdale.alrajab.bcs421.database.DatabaseActivity
+import edu.farmingdale.alrajab.bcs421.ui.database.DatabaseActivity
 import edu.farmingdale.alrajab.bcs421.databinding.ActivityMainBinding
-import edu.farmingdale.alrajab.bcs421.files.FileActivity
+import edu.farmingdale.alrajab.bcs421.ui.files.FileActivity
 
 class MainActivity : AppCompatActivity() {
 

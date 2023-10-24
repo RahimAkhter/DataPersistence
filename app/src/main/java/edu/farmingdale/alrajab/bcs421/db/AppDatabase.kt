@@ -1,4 +1,4 @@
-package edu.farmingdale.alrajab.bcs421.database
+package edu.farmingdale.alrajab.bcs421.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

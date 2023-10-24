@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BCS 421 - HW8 - Akhter</string>
+    <string name="title_activity_spactivity">SPActivity</string>
 </resources>
