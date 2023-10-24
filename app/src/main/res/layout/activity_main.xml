@@ -11,12 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Files" />
+        android:text="@string/files" />
 
     <Button
         android:id="@+id/database_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Database" />
+        android:text="@string/database" />
+
+    <Button
+        android:id="@+id/button_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/preferences" />
 </LinearLayout>
