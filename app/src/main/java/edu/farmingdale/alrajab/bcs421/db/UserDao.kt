@@ -3,28 +3,37 @@ package edu.farmingdale.alrajab.bcs421.db
 import androidx.room.*
 import androidx.room.OnConflictStrategy.*
 import androidx.room.OnConflictStrategy.Companion.REPLACE
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface UserDao {
-    @Query("SELECT * FROM users")
-    fun getAll(): List<User>
+	@Query("SELECT * FROM users")
+	suspend fun getAll(): List<User>
 
-    @Query("SELECT * FROM users WHERE uid IN (:userIds)")
-    fun loadAllByIds(userIds: IntArray): List<User>
+	@Query("SELECT * FROM users")
+	fun getAllFlow(): Flow<List<User>>
 
-    @Query("SELECT * FROM users WHERE first_name LIKE :first AND " +
-            "last_name LIKE :last LIMIT 1")
-    fun findByName(first: String, last: String): User
+	@Query("SELECT * FROM users WHERE uid IN (:userIds)")
+	suspend fun loadAllByIds(userIds: IntArray): List<User>
 
-    @Insert
-    fun insertAll(vararg users: User)
+	@Query(
+		"SELECT * FROM users WHERE first_name LIKE :first AND " +
+				"last_name LIKE :last LIMIT 1"
+	)
+	suspend fun findByName(first: String, last: String): User
 
-    @Insert(onConflict = REPLACE)
-    fun addUser(user: User): Long
+	@Insert
+	suspend fun insertAll(vararg users: User)
 
-    @Query("SELECT * FROM users WHERE uid = :id")
-    fun getUser(id: Long): User?
+	@Insert(onConflict = REPLACE)
+	suspend fun addUser(user: User): Long
 
-    @Delete
-    fun delete(user: User)
+	@Query("SELECT * FROM users WHERE uid = :id")
+	suspend fun getUser(id: Long): User?
+
+	@Delete
+	suspend fun delete(user: User)
+
+	@Update
+	suspend fun update(user: User)
 }

@@ -28,10 +28,10 @@ class MainActivity : AppCompatActivity() {
 		// Done 02:SP Make an activity that accept the User's first and last name and save/read/update
 		//  the shared preference
 
-		// TODO 03:DB Edit the Database page so that you store  the first name and last name of the
+		// Done 03:DB Edit the Database page so that you store  the first name and last name of the
 		//  user input (EditView)
 
-		// TODO 04:DB Update an existing name with a new one
+		// Done 04:DB Update an existing name with a new one
 		// TODO 05:DB Read from the files and write to the DB
 
 		// TODO 06: Push your code to GitHub and submit the link
